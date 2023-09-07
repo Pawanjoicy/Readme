@@ -1,0 +1,66 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set white background for the entire page */
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Style navigation bar links */
+header {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+}
+#main{
+    height: 2000px;
+    width: 100%;
+}
+#header{
+    margin-top: 200px;
+}
+/* Add styles for the footer */
+footer {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    height: 150px; /* Set the height to 150 pixels */
+    width: 100%;   /* Set the width to 100% */
+}
