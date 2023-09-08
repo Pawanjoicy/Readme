@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.school {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.schoolName {
+    font-size: 1rem;
+}
+
+.navBar {
+    padding: 2rem;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.navBar ul li a {
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.navBar ul li a:hover {
+    color: orange;
+    padding: 0.2rem;
+    border-bottom: 1px solid orange;
+}
+
+/* Photo */
+.photo {
+    text-align: center;
+    background: #000;
+    padding: 0 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: 28rem;
+}
+
+/* About School */
+.aboutSchool {
+    margin: 2rem 0;
+    padding: 0 3rem;
+    text-align: justify;
+}
+
+.aboutHead {
+    width: 20%;
+    border-bottom: 2px solid orange;
+    margin-bottom: 2rem;
+}
+
+.aboutSchool p {
+    font-size: 1.3rem;
+}
+
+.card {
+    margin: 2rem;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.box {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #3333;
+}
+
+.card .box i {
+    font-size: 1.8rem;
+    color: orange;
+    margin-bottom: 0.5rem;
+}
+
+.card .box h3 {
+    font-size: 2rem;
+}
+
+.cardVision {
+    margin: 3rem;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.boxVision {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #3333;
+}
+
+.visionHead{
+    border-bottom: 2px solid orange;
+    width: 25%;
+    margin-bottom: 1.5rem;
+}
+.boxVision p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.boxVision ul li{
+    list-style:disc;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
