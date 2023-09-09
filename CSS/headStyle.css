@@ -1,0 +1,44 @@
+.school {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.schoolName {
+    font-size: 1rem;
+}
+
+.navBar {
+    padding: 2rem;
+}
+
+.navBar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.navBar ul li a {
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.navBar ul li a:hover {
+    color: orange;
+    padding: 0.2rem;
+    border-bottom: 1px solid orange;
+}

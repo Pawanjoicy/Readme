@@ -1,0 +1,44 @@
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 15%;
+    background: #3c3fa8;
+}
+.foot .socialLinks p{
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.foot .socialLinks a i{
+    color: white;
+    font-size: 3rem;
+    margin-left: 1rem;
+    transition: all 0.2s ease-out;
+}
+.foot .socialLinks a i:hover{
+    transform: scale(0.8);
+}
+
+.foot .footContact .contents{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.foot .footContact .contents p i{
+    color: white;
+    margin-right: 1rem;
+}
+.foot .footContact .contents p{
+    font-size: 1.3rem;
+    color: white;
+    margin: 1.2rem 0;
+}
+.copyright{
+    text-align: center;
+    padding: 1% 0;
+    background: rgb(228, 225, 225);
+    font-size: 0.8rem;
+}
