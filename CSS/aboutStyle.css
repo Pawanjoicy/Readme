@@ -92,8 +92,8 @@ a {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #3333;
+    transition: all 0.2s ease-in;
 }
-
 .visionHead{
     border-bottom: 2px solid orange;
     width: 25%;

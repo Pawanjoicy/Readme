@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ABC Daycare</title>
-    <link rel="stylesheet" href="CSS\homestyle.css">
-    <link rel="stylesheet" href="./CSS/headStyle.css">
-    <link rel="stylesheet" href="./CSS/footStyle.css">
+    <title>Contact Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="./CSS/contactStyle.css">
+    <link rel="stylesheet" href="./CSS/headStyle.css">
+    <link rel="stylesheet" href="./CSS/footStyle.css">
 </head>
+
 <body>
     <!-- Header Start -->
     <header>
@@ -29,7 +30,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="teachers_testimonials.html">Teachers</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -37,16 +38,37 @@
         </div>
     </header>
     <!-- Header End -->
+    <div class="container">
+        <div class="content">
+            <div class="left-section">
+                <img src="./Resources/Contact/WhatsApp Image 2023-09-08 at 9.04.05 PM (1).jpeg" alt="Contact Image">
+                <h3>Contact Information</h3>
+                <p>Contact: 123-456-7890</p>
+                <p>Email: example@email.com</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="right-section">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <main>
-        <section id="main">
-            <h1 id="header">Welcome to Veena's Pre nursery School</h1>
-            <!-- Add content for your homepage here -->
-        </section>
-    </main>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-     <!-- Footer starts -->
-     <footer>
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer starts -->
+    <footer>
         <div class="foot">
             <div class="socialLinks">
                 <p>Follow us On:</p>
@@ -69,4 +91,5 @@
     </footer>
     <!-- Footer ends -->
 </body>
+
 </html>
