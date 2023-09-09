@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to ABC Daycare</title>
     <link rel="stylesheet" href="CSS\homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/aboutStyle.css">
+    <link rel="stylesheet" href="./CSS/headStyle.css">
+    <link rel="stylesheet" href="./CSS/footStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Link to your CSS file for styling -->
+    <script src="js\imagesslider.js"></script>
 </head>
-<body>
-    <header> 
+<body><div id="navigation">
+    <header id="header"> 
+        <div id="logo-container">
+            <img src="Readme\Resources\About\logo.png" alt="Logo" id="logo" height="80px" width="80px">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,16 +31,139 @@
             </ul>
         </nav>
     </header>
+</div>
+<!-- <div class="topnav">
+    <img src="Resources\About\logo.png" alt="Logo" class="logo">
+    <a class="active" href="#home">Home</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="admissions.html">Admissions</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </div> -->
+  
+<main id="main">
+   <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <main>
-        <section id="main">
-            <h1 id="header">Welcome to Veena's Pre nursery School</h1>
-            <!-- Add content for your homepage here -->
-        </section>
-    </main>
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images\image1.jpg" style="width:100%" height="500px">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images\image2.jpg" style="width:100%"height="500px>
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images\image3.jpg" style="width:100%" height="500px>
+      <div class="text">Caption Three</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images\image4.jpg" style="width:100%" height="500px>
+        <div class="text">Caption four</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images\image5.jpg" style="width:100%" height="500px>
+        <div class="text">Caption five</div>
+      </div>
+    
+  
+    <!-- Next and previous buttons -->
+  </div>
 
-    <footer>
-        <p>&copy; 2023 Veena Daycare</p>
-    </footer>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> <br>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+<hr>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- <div class="card">
+  <img src="images\profile.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div> -->
+<div class="container">
+  <div class="column">
+      <p>
+         <div class="card">
+  <img src="images\profile.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>
+      </p>
+  </div>
+  <div class="column">
+    <p>Welcome to Veena's Daycare, a nurturing haven for children.<br> Founded just two years ago, our journey began with a vision:
+       <br>to provide a wholesome and stimulating environment that fosters early childhood development. 
+       At Veena's Daycare, we are dedicated to offering young <br>learners the best possible start on their educational journey. 
+       Our focus is on providing a safe,<br> loving, and enriching atmosphere<br> where children can explore, learn, and grow.</p>
+  </div>
+  <div class="column">
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eget libero tristique
+          scelerisque.
+      </p>
+  </div>
+</div>
+<div class="event-container">
+  <h1>Latest Event</h1>
+  <ul class="photo-list">
+      <li><img src="images\istockphoto-669922316-612x612.jpg" alt="Event Photo 1"></li>
+      <li><img src="images\istockphoto-1095815742-612x612.jpg" alt="Event Photo 2"></li>
+      <li><img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3"></li>
+      <!-- Add more photo list items as needed -->
+  </ul>
+</div>
+
+</main>
+
+        <footer>
+            <div class="foot">
+                <div class="socialLinks">
+                    <p>Follow us On:</p>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div class="footContact">
+                    <div class="contents">
+                        <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
+                        <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
+                    </div>
+                </div>
+            </div> 
+            <div class="copyright">
+                <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
+            </div>
+        </footer>
 </body>
 </html>
