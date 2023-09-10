@@ -16,6 +16,9 @@ header {
     color: #FFFFFF;
     padding: 20px 0;
     font-size: 30px;
+    width: 1950px;
+    height: 150px;
+    margin-top: 0px;
     /* overflow: auto; */
 }
 
@@ -55,12 +58,12 @@ footer {
 #main{
     height: 3000px;
     width: 100%;
-}
+/* }
 #header{
     margin-top: 0px;
     height: 100px;
     width: 100%;
-}
+} */
 
 /* Style for the entire footer */
 footer {
