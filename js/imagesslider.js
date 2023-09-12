@@ -41,4 +41,3 @@ function showSlides(n) {
   // Add the "active" class to the current dot
   dots[slideIndex-1].className += " active";
 }
-
