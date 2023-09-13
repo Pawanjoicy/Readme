@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
 
-<<<<<<< HEAD
-* {
-=======
 *{
->>>>>>> prakash
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,12 +17,7 @@ li {
 a {
     text-decoration: none;
 }
-<<<<<<< HEAD
-
-.container {
-=======
 /* .container {
->>>>>>> prakash
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -101,8 +92,6 @@ button {
 
 button:hover {
     background-color: #0056b3;
-<<<<<<< HEAD
-=======
 } */
 .topContainer{
     height: 100%;
@@ -180,5 +169,4 @@ textarea{
         margin-right: 5%;
     }
     
->>>>>>> prakash
 }
