@@ -3,7 +3,9 @@ body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
-
+.schoolName{
+  color: #000;
+}
 /* Set white background for the entire page */
 body {
   background-color: #FFFFFF;
@@ -12,7 +14,7 @@ body {
 
 /* Style navigation bar links */
 header {
-  background-color: #2880dd;
+  background-color: #f1f4f7;
   color: #FFFFFF;
   padding: 20px 0;
   font-size: 30px;
@@ -56,12 +58,6 @@ footer {
   height: 3000px;
   width: 100%;
 }
-#header{
-  margin-top: 0px;
-  height: 100px;
-  width: 100%;
-}
-
 /* Style for the entire footer */
 footer {
   background-color: #007BFF;
@@ -74,7 +70,8 @@ footer {
 
 /* Styles for the copyright text */
 .copyright {
-  margin-top: 10px; /* Add some space between the content above and the copyright text */
+  margin-top: 10px;
+  color: #000; /* Add some space between the content above and the copyright text */
 }
 
 #logo-container {
