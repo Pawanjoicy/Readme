@@ -42,3 +42,18 @@
     background: rgb(228, 225, 225);
     font-size: 0.8rem;
 }
+@media screen and (max-width: 780px) {
+    .foot .socialLinks a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 450px){
+    .foot{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot .socialLinks{
+        display: flex;
+    }
+}
