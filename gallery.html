@@ -2,40 +2,46 @@
 <html>
 
 <head>
-  <title>Gallery Page</title>
-  <link rel="stylesheet" href="./CSS/galleryStyle.css">
-  <link rel="stylesheet" href="./CSS/headStyle.css">
-  <link rel="stylesheet" href="./CSS/footStyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ABC Daycare</title>
+    <link rel="stylesheet" href="./CSS/galleryStyle.css">
+    <link rel="stylesheet" href="./CSS/headStyle.css">
+    <link rel="stylesheet" href="./CSS/footStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 
 <body>
   <!-- Header Start -->
   <header>
     <div class="school">
-      <div class="head">
-        <div class="logo">
-          <img src="./Resources/About/logo.png" alt="logo">
+        <div class="head">
+            <div class="logo">
+                <img src="./Resources/About/logo.png" alt="logo">
+            </div>
+            <div class="schoolName">
+                <h1>Veena's Pre Nursery School</h1>
+            </div>
         </div>
-        <div class="schoolName">
-          <h1>Veena's Pre Nursery School</h1>
-        </div>
-      </div>
-      <nav class="navBar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="teachers_testimonials.html">Teachers</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+        <a id="menu-icon" class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav class="navBar">
+            <ul class="nav-bar dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="teachers_testimonials.html">Teachers</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
-  <!-- Header End -->
+</header>
+<!-- Header End -->
 
   <main>
     <div class="box">
@@ -86,6 +92,7 @@
     </div>
   </footer>
   <!-- Footer ends -->
+  <script src="./js/responsive.js"></script>
 </body>
 
 </html>

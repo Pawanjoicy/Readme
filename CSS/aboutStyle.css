@@ -85,6 +85,7 @@ a {
     justify-content: center;
     gap: 50px;
 }
+
 .boxVision {
     flex: 0 0 40%;
     max-width: 40%;
@@ -94,24 +95,29 @@ a {
     box-shadow: 0px 0px 20px #3333;
     transition: all 0.2s ease-in;
 }
-.visionHead{
+
+.visionHead {
     border-bottom: 2px solid orange;
     width: 25%;
     margin-bottom: 1.5rem;
 }
-.boxVision p{
+
+.boxVision p {
     font-size: 1.3rem;
     line-height: 1.5rem;
 }
-.boxVision ul li{
-    list-style:disc;
+
+.boxVision ul li {
+    list-style: disc;
     font-size: 1.3rem;
     line-height: 2rem;
 }
-.founder{
-    margin: 5rem 20%;    
+
+.founder {
+    margin: 5rem 20%;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,19 +126,75 @@ a {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #3333;
-    
+
 }
-.founder .container .founderReview h2{
+
+.founder .container .founderReview h2 {
     color: #2E3298;
     margin-bottom: 0.3rem;
 }
-.founder .container .founderReview h3{
+
+.founder .container .founderReview h3 {
     text-align: center;
     color: orange;
     margin-bottom: 1rem;
 }
-.founder .container .founderImg img{
+
+.founder .container .founderImg img {
     width: 350px;
     height: 350px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .aboutHead {
+        width: 30%;
+    }
+    .aboutSchool p {
+        padding: 0 5%;
+    }
+    .boxVision {
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 1rem;
+    }
+
+    .cardVision {
+        flex-direction: column;
+    }
+    .founder{
+        margin: 5rem 5%;
+    }
+    .founder .container{
+        flex-wrap: wrap;
+    }
+    .founder .container .founderReview{
+        padding: 2%;
+    }
+}
+@media screen and (max-width: 450px){
+    .aboutSchool{
+        padding: 0 1rem;
+    }
+    .aboutHead{
+        width: 60%;
+    }
+    .aboutSchool p {
+        padding: 0 5%;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .cardVision{
+        margin: 0;
+    }
+    .box{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 250px;
+    }
+    .founder{
+        margin: 5rem 5%;
+    }
 }
