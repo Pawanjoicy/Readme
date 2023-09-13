@@ -1,13 +1,15 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .schoolName{
   color: #000;
 }
-/* Set white background for the entire page */
 body {
+    font-family: 'Poppins' sans-serif;
   background-color: #FFFFFF;
   font-family: Arial, sans-serif;
 }
@@ -355,4 +357,8 @@ margin: 0;
 
 .form-group input[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
 }

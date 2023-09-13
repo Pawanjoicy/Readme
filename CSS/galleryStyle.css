@@ -18,10 +18,17 @@ a {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
   header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
   }
+=======
+  /* header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  } */
+>>>>>>> prakash
 
   main {
     max-width: 1200px;
