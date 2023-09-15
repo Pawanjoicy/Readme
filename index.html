@@ -1,72 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ABC Daycare</title>
-    <link rel="stylesheet" href="CSS\homestyle.css">
-    <link rel="stylesheet" href="./CSS/headStyle.css">
-    <link rel="stylesheet" href="./CSS/footStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link to your CSS file for styling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/homestyle.css">
+  <link rel="stylesheet" href="./CSS/headStyle.css">
+  <link rel="stylesheet" href="./CSS/footStyle.css">
+  <link rel="stylesheet" href="./CSS/contactStyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    <!-- Header Start -->
-    <header>
-        <div class="school">
-            <div class="head">
-                <div class="logo">
-                    <img src="./Resources/About/logo.png" alt="logo">
-                </div>
-                <div class="schoolName">
-                    <h1>Veena's Pre Nursery School</h1>
-                </div>
-            </div>
-            <nav class="navBar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="admissions.html">Admissions</a></li>
-                    <li><a href="teachers_testimonials.html">Teachers</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+  <!-- Header Start -->
+  <header>
+    <div class="school">
+      <div class="head">
+        <div class="logo">
+          <img src="./Resources/About/logo.png" alt="logo">
         </div>
-    </header>
-    <!-- Header End -->
+        <div class="schoolName">
+          <h1>Veena's Pre Nursery School</h1>
+        </div>
+      </div>
+      <a id="menu-icon" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav class="navBar">
+        <ul class="nav-bar dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="teachers_testimonials.html">Teachers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End -->
 
-    <main>
-        <section id="main">
-            <h1 id="header">Welcome to Veena's Pre nursery School</h1>
-            <!-- Add content for your homepage here -->
-        </section>
-    </main>
+  <!-- Image slider -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/image1.jpg" style="width:100%; height: 70vh;">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./images/image2.jpg" style="width:100%; height: 70vh;">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/image3.jpg" style="width:100%; height: 70vh;">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <hr style="height: 20px; font-weight: 700;">
 
-     <!-- Footer starts -->
-     <footer>
-        <div class="foot">
-            <div class="socialLinks">
-                <p>Follow us On:</p>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-            </div>
-            <div class="footContact">
-                <div class="contents">
-                    <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
-                    <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
-                    <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
-                </div>
-            </div>
+  <!-- <div class="card">
+  <img src="images\profile.jpg" alt="John" style="width:100%">
+  <h1>John Doe</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div> -->
+  <div class="container" >
+    <div class="column" data-aos="fade-up">
+      <div class="profile-img">
+        <img src="./images/profile.jpg" alt="" style="height: 70%;">
+      </div>
+      <div class="profile-info" >
+        <h2>Founder and Director</h2>
+        <h3>--ABC</h3>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
+    <div class="column column1" data-aos="fade-up-right">
+      <p>Welcome to Veena's Daycare, a nurturing haven for children.<br> Founded just two years ago, our journey began
+        with a vision:
+        <br>to provide a wholesome and stimulating environment that fosters early childhood development.
+        At Veena's Daycare, we are dedicated to offering young <br>learners the best possible start on their educational
+        journey.
+        Our focus is on providing a safe,<br> loving, and enriching atmosphere<br> where children can explore, learn,
+        and grow.
+      </p>
+    </div>
+    <div class="column column1"data-aos="fade-up-right">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eget libero tristique
+        scelerisque.
+      </p>
+    </div>
+  </div>
+  <div class="event-container" >
+    <h2>Latest Event</h2>
+    <div class="photo-list" data-aos="fade-up-right">
+      <img src="images\istockphoto-669922316-612x612.jpg" alt="Event Photo 1">
+      <img src="images\istockphoto-1095815742-612x612.jpg" alt="Event Photo 2">
+      <img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3">
+      <img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3">
+      <!-- Add more photo list items as needed -->
+    </div>
+  </div>
+  <div class="locate-column">
+    <h2>Locate Us</h2>
+    <div class="locate">
+      <p data-aos="flip-up"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d62193.69712271492!2d77.
+        67868062398145!3d13.028916846522291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCs
+        DAyJzQyLjgiTiA3N8KwNDQnMTguMiJF!5e0!3m2!1sen!2sin!4v1694523365397!5m2!1sen!2sin" width="600" height="500"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+      <div class="contactForm" data-aos="fade-left">
+        <h3>Contact Us</h3>
+        <form onsubmit="sendMail(); reset(); return false">
+          <input type="text" id="studentname" name="studentname" placeholder="Student Name" required>
+          <input type="email" id="parentemail" name="parentemail" placeholder="Parent Email Id" required>
+          <input type="number" id="phone" name="phone" placeholder="Mobile Number" required>
+          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+          <button type="submit" class="submit">Contact Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </main>
+  <!-- Footer starts -->
+  <footer>
+    <div class="foot">
+      <div class="socialLinks">
+        <p>Follow us On:</p>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+      <div class="footContact">
+        <div class="contents">
+          <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
+          <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
+          <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
         </div>
-        <div class="copyright">
-            <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <!-- Footer ends -->
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+  <script src="./js/responsive.js"></script>
+  <script src="./js/imagesslider.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./js/contact.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 800,
+    });
+  </script>
 </body>
+
 </html>

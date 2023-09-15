@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/headStyle.css">
     <link rel="stylesheet" href="./CSS/footStyle.css">
     <link rel="stylesheet" href="./CSS/teachStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header Start -->
@@ -23,8 +24,11 @@
                     <h1>Veena's Pre Nursery School</h1>
                 </div>
             </div>
+            <a id="menu-icon" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
             <nav class="navBar">
-                <ul>
+                <ul class="nav-bar dropdown-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="admissions.html">Admissions</a></li>
@@ -37,42 +41,84 @@
     </header>
     <!-- Header End -->
 
-    <div class="container">
-        <h2>Our Teachers</h2>
-        <div class="teacher">
-            <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg">
-            <div>
-                <h3>mr.akshay kumar singh</h3>
-                <p>He is a gentle boy. </p>
-            </div>
+    <div class="content">
+        <div class="left-section" data-aos="slide-left">
+            <img src="./Resources/Testimonial/ann.jpeg" alt="Image">
         </div>
-
-        <div class="teacher">
-            <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg">
-            <div>
-                <h3>prakash nayak</h3>
-                <p>he is a bengali lover....❤️</p>
-            </div>
-        </div>
-        <div class="teacher">
-            <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg">
-            <div>
-                <h3>Pawan kumar patel</h3>
-                <p>Most decent boy dating a girl named Shreya.</p>
-            </div>
-        </div>
-        <h2>commendations</h2>
-        <div class="testimonial">
-            <h3>Parent 1</h3>
-            <p>description parent 1.</p>
-        </div>
-
-        <div class="testimonial">
-            <h3>Parent 2</h3>
-            <p>Description parent 2.</p>
+        <div class="right-section" data-aos="slide-down">
+            <p>"A teacher affects eternity; they can never tell where their influence stops."
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam velit rem repellendus ut expedita quod fuga nihil sapiente iusto consequatur quasi accusamus, corrupti adipisci unde officiis impedit at similique animi? Facilis obcaecati iusto qui eos ea, tempora quisquam rem nam blanditiis soluta ex ad, nostrum consectetur magnam sed quasi.
+            </p>
+            
         </div>
     </div>
-
+    <main>
+        <div class="container">
+            <h2>Our Teachers</h2>
+            <div class="teachers-list">
+                <div class="teacher-info" data-aos="slide-right">
+                    <div class="teacher">
+                        <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                        <div>
+                            <h3>Mr. A</h3>
+                            <p>About and description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-info" data-aos="slide-left">
+                    <div class="teacher">
+                        <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                        <div>
+                            <h3>Mr. A</h3>
+                            <p>About and description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-info" data-aos="slide-right">
+                    <div class="teacher">
+                        <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                        <div>
+                            <h3>Mr. A</h3>
+                            <p>About and description.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-info" data-aos="slide-left">
+                    <div class="teacher">
+                        <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                        <div>
+                            <h3>Mr. B</h3>
+                            <p>About and description.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Teachers Reviews</h2>
+            <div class="reviews">
+                <div class="review" data-aos="slide-up">
+                    <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                    <div>
+                        <h3>Review 1</h3>
+                        <p>Description.</p>
+                    </div>
+                </div>
+                <div class="review" data-aos="slide-up">
+                    <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                    <div>
+                        <h3>Review 2</h3>
+                        <p>Description.</p>
+                    </div>
+                </div>
+                <div class="review" data-aos="slide-up">
+                    <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
+                    <div>
+                        <h3>Review 3</h3>
+                        <p>Description.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- Footer starts -->
     <footer>
         <div class="foot">
@@ -96,5 +142,13 @@
         </div>
     </footer>
     <!-- Footer ends -->
+    <script src="./js/responsive.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 800,
+        });
+    </script>
 </body>
 </html>

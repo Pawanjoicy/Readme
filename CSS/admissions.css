@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins' sans-serif;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
+/* Top Container */
+.topContainer{
+    height: 100%;
+    background: rgb(221, 221, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 2rem;
+}
+
+
+
+.leftContainer{
+    width: 100%;
+    padding: 10px;
+}
+.leftContainer h2{
+    font-size: 2.5rem;
+    border-bottom: 5px solid orange;
+    width: 20%;
+    margin-bottom: 30px;
+}
+.leftContainer .content p{
+    font-size: 1.8rem;
+}
+.admForm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid orange;
+    margin-left: 5%;
+    box-shadow: 0px 0px 20px #3333;
+}
+.admForm h3{
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#course{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.submit{
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.submit:hover{
+    background-color: #0056b3;
+}
+
+/* Programs */
+.program {
+    background: #3c3fa8;
+    padding: 3%;
+}
+.program h3{
+    font-size: 2.5rem;
+    color: white;
+    border-bottom: 3px solid orange;
+    width: 20%;
+    margin-bottom: 40px;
+}
+.program .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+.program .container .card .bottom {
+    background: yellow;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+.program .container .card .bottom span{
+    font-weight: 700;
+    margin-right: 25%;
+    color: #3c3fa8;
+}
+.program .container .card .bottom i{
+    border: 3px solid #3c3fa8;
+    padding: 4px;
+    color: #3c3fa8;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.card .content1{
+    background: white;
+    padding: 7% 7%;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+.card .content1 .head{
+    font-size: 2rem;
+    color: #3c3fa8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.card .content1 .new{
+    color: #3c3fa8;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+    margin-bottom: 20px;
+}
+.card .content1 .new i{
+    margin-right: 20px;
+}
+.card .content1 .new span{
+    color: gray;
+    font-weight: 100;
+    margin-left: 40px;
+    font-size: 1.2rem;
+}
+/* Join */
+.join{
+    height: 100%;
+    background: rgb(221, 221, 197);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 8rem;
+}
+.left h3{
+    font-size: 2.5rem;
+    border-bottom: 5px solid orange;
+    width: 70%;
+    margin-bottom: 30px;
+    padding-bottom: 1rem;
+}
+.left p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-right: 20px;
+}
+.right .joinContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+.right .joinContainer .card{
+    background: white;
+    margin-right: 20px;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 0px 0px 20px #3333;
+}
+.right .joinContainer .card i{
+    font-size: 4rem;
+    color: #3c3fa8;
+    margin-bottom: 10px;
+}
+.right .joinContainer .card p{
+    font-size: 2rem;
+    text-align: justify;
+    color: gray;
+}
+
+@media screen and (max-width: 780px) {
+    .topContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .program h3{
+        width: 35%;
+    }
+    .program .container{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .join{
+        flex-direction: column;
+    }
+    .join .joinContainer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .join .joinContainer .card{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px){
+    .leftContainer h2{
+        width: 50%;
+    }
+    .program h3{
+        width: 50%;
+        font-size: 2rem;
+    }
+    .join{
+        padding: 1.5rem;
+    }
+}

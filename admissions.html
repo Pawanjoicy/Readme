@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ABC Daycare</title>
+    <link rel="stylesheet" href="./CSS/admissions.css">
+    <link rel="stylesheet" href="./CSS/headStyle.css">
+    <link rel="stylesheet" href="./CSS/footStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link to your CSS file for styling -->
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="school">
+            <div class="head">
+                <div class="logo">
+                    <img src="./Resources/About/logo.png" alt="logo">
+                </div>
+                <div class="schoolName">
+                    <h1>Veena's Pre Nursery School</h1>
+                </div>
+            </div>
+            <a id="menu-icon" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="navBar">
+                <ul class="nav-bar dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="teachers_testimonials.html">Teachers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <div class="topContainer">
+            <div class="leftContainer" data-aos="slide-right">
+                <h2>Admission</h2>
+                <div class="content">
+                    <p>ABC has always been ‘learner centric’ and open to change, this has been reflected in our approach
+                        towards preschool, play school, kindergarten, nursery and learning over the last 30 years. At
+                        this, it has been a constant endeavour to ensure the best preschool learning for our children
+                        with our vision for an exciting future for our children. Our new age iCan Learning System has
+                        been developed to prepare our children to live in this thriving and accelerated world.Register
+                        for this preschool in India and get admission today!
+                    </p>
+                </div>
+            </div>
+            <div class="admForm" data-aos="slide-left">
+                <h3>Preschool Admission Enquiry Form <br>2023-24</h3>
+                <form onsubmit="sendMail(); reset(); return false" data-aos="slide-left">
+                    <input type="text" id="studentname" name="studentname" placeholder="Student Name" required>
+                    <input type="text" id="parentname" name="parentname" placeholder="Parent Name" required>
+                    <input type="email" id="parentemail" name="parentemail" placeholder="Parent Email Id" required>
+                    <input type="number" id="phone" name="phone" placeholder="Mobile Number" required>
+
+                    <select name="course" id="course" required>
+                        <option value="selectclass">Select Class</option>
+                        <option value="preNursery">Day Care</option>
+                        <option value="preNursery">Pre Nursery</option>
+                        <option value="lkg">L.K.G</option>
+                        <option value="ukg">U.K.G</option>
+                    </select>
+                    <button type="submit" class="submit">Enquire Now</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="program">
+            <h3>Our Programs</h3>
+            <div class="container">
+                <div class="card active" id="card1" data-aos="zoom-in">
+                    <!--<div class="photo">
+                        <img src="./Resources/Contact/WhatsApp Image 2023-09-08 at 9.04.05 PM (1).jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <span>Day School</span>
+                        <i class="fa-solid fa-plus" id="open"></i>
+                    </div> -->
+                    <div class="content1" id="content1">
+                        <p class="head">Day Care</p>
+                        <p class="new"><i class="fa-solid fa-face-grin-wide"></i>2-3 years <br><span>Kids</span></p>
+                        <p class="new"><i class="fa-solid fa-calendar-days"></i>5 days <br><span>a Week</span></p>
+                        <p class="new"><i class="fa-solid fa-clock"></i>5-6 hours <br><span>per day</span></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-out">
+                    <!-- <div class="photo">
+                        <img src="./Resources/Contact/WhatsApp Image 2023-09-08 at 9.04.05 PM (1).jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <span>Day School</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div> -->
+                    <div class="content1" id="content1">
+                        <p class="head">Day Care</p>
+                        <p class="new"><i class="fa-solid fa-face-grin-wide"></i>2-3 years <br><span>Kids</span></p>
+                        <p class="new"><i class="fa-solid fa-calendar-days"></i>5 days <br><span>a Week</span></p>
+                        <p class="new"><i class="fa-solid fa-clock"></i>5-6 hours <br><span>per day</span></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <!-- <div class="photo">
+                        <img src="./Resources/Contact/WhatsApp Image 2023-09-08 at 9.04.05 PM (1).jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <span>Day School</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div> -->
+                    <div class="content1" id="content1">
+                        <p class="head">Day Care</p>
+                        <p class="new"><i class="fa-solid fa-face-grin-wide"></i>2-3 years <br><span>Kids</span></p>
+                        <p class="new"><i class="fa-solid fa-calendar-days"></i>5 days <br><span>a Week</span></p>
+                        <p class="new"><i class="fa-solid fa-clock"></i>5-6 hours <br><span>per day</span></p>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-out">
+                    <!-- <div class="photo">
+                        <img src="./Resources/Contact/WhatsApp Image 2023-09-08 at 9.04.05 PM (1).jpeg" alt="">
+                    </div>
+                    <div class="bottom">
+                        <span>Day School</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div> -->
+                    <div class="content1" id="content1">
+                        <p class="head">Day Care</p>
+                        <p class="new"><i class="fa-solid fa-face-grin-wide"></i>2-3 years <br><span>Kids</span></p>
+                        <p class="new"><i class="fa-solid fa-calendar-days"></i>5 days <br><span>a Week</span></p>
+                        <p class="new"><i class="fa-solid fa-clock"></i>5-6 hours <br><span>per day</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="join">
+            <div class="left" data-aos="slide-down">
+                <h3>Why ABC School?</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis odit laborum velit excepturi
+                    fugiat illum neque beatae! Expedita, ducimus error!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis odit laborum velit excepturi
+                    fugiat illum neque beatae! Expedita, ducimus error!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis odit laborum velit excepturi
+                    fugiat illum neque beatae! Expedita, ducimus error!
+                </p>
+            </div>
+            <div class="right">
+                <div class="joinContainer">
+                    <div class="card" data-aos="slide-left">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <p>Providing Quality education.</p>
+                    </div>
+                    <div class="card" data-aos="slide-left">
+                        <i class="fa-solid fa-school"></i>
+                        <p>Great Environment for learning.</p>
+                    </div>
+                    <div class="card" data-aos="slide-left">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <p>Innovation and smart curriculum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer starts -->
+    <footer>
+        <div class="foot">
+            <div class="socialLinks">
+                <p>Follow us On:</p>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <div class="footContact">
+                <div class="contents">
+                    <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
+                    <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
+                    <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+
+    
+    <script src="./js/responsive.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/admission.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 800,
+        });
+    </script>
+</body>
+
+</html>

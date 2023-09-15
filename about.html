@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/aboutStyle.css">
     <link rel="stylesheet" href="./CSS/headStyle.css">
     <link rel="stylesheet" href="./CSS/footStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -25,8 +26,11 @@
                     <h1>Veena's Pre Nursery School</h1>
                 </div>
             </div>
+            <a id="menu-icon" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </a>
             <nav class="navBar">
-                <ul>
+                <ul class="nav-bar dropdown-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="admissions.html">Admissions</a></li>
@@ -46,8 +50,9 @@
     <!-- Photo section end -->
     <!-- About section starts -->
     <div class="aboutSchool">
-        <h2 class="aboutHead">About Our School</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in natus nesciunt. Deserunt rerum obcaecati
+        <h2 class="aboutHead" data-aos="slide-up">About Our School</h2>
+        <p data-aos="slide-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in natus nesciunt.
+            Deserunt rerum obcaecati
             quos aperiam blanditiis? Et, quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi in natus
             nesciunt. Deserunt rerum obcaecati quos aperiam blanditiis? Et, quos?Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Nisi in natus nesciunt. Deserunt rerum obcaecati quos aperiam blanditiis? Et, quos?Lorem
@@ -66,22 +71,22 @@
             corrupti.
         </p>
         <div class="card">
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <i class="fa-solid fa-suitcase fa-shake"></i>
                 <h3 style="color: #2E3298;">5+</h3>
                 <h4>Years of Experience</h4>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-out">
                 <i class="fa-solid fa-children fa-bounce"></i>
                 <h3 style="color: #2E3298;">500+</h3>
                 <h4>No. Of Students</h4>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <i class="fa-solid fa-chalkboard-user fa-beat"></i>
                 <h3 style="color: #2E3298;">50+</h3>
                 <h4>No. Of Staffs</h4>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-out">
                 <i class="fa-solid fa-palette fa-flip"></i>
                 <h3 style="color: #2E3298;">50+</h3>
                 <h4>No. Of Activities</h4>
@@ -90,12 +95,12 @@
 
         <h2 class="aboutHead">Vision and Mission</h2>
         <div class="cardVision">
-            <div class="boxVision">
+            <div class="boxVision" data-aos="slide-right">
                 <h2 class="visionHead">Vision</h2>
                 <p>Our focus is to build the confidence, create smart learners and smart thinkers.<br><br>A place of
                     discipline, dignity and determination.</p>
             </div>
-            <div class="boxVision">
+            <div class="boxVision" data-aos="slide-left">
                 <h2 class="visionHead">Mission</h2>
                 <ul>
                     <li>Our mission is to create a safe and happy environment to the child.</li>
@@ -107,7 +112,7 @@
         </div>
         <div class="founder">
             <div class="container">
-                <div class="founderReview">
+                <div class="founderReview" data-aos="slide-down">
                     <h2>Founder and Director</h2>
                     <h3>--Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum cumque, porro assumenda amet non
@@ -115,7 +120,7 @@
                         blanditiis voluptate, ullam id et? Mollitia?</p>
                 </div>
                 <div class="founderImg">
-                    <img src="./Resources/About/founder.jpg" alt="founder">
+                    <img src="./Resources/About/founder.jpg" alt="founder" data-aos="slide-left">
                 </div>
             </div>
         </div>
@@ -145,6 +150,14 @@
         </div>
     </footer>
     <!-- Footer ends -->
+    <script src="./js/responsive.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 800,
+        });
+    </script>
 </body>
 
 </html>
