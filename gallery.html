@@ -3,81 +3,87 @@
 
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ABC Daycare</title>
-    <link rel="stylesheet" href="./CSS/galleryStyle.css">
-    <link rel="stylesheet" href="./CSS/headStyle.css">
-    <link rel="stylesheet" href="./CSS/footStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to ABC Daycare</title>
+  <link rel="stylesheet" href="./CSS/galleryStyle.css">
+  <link rel="stylesheet" href="./CSS/headStyle.css">
+  <link rel="stylesheet" href="./CSS/footStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <!-- Header Start -->
   <header>
     <div class="school">
-        <div class="head">
-            <div class="logo">
-                <img src="./Resources/About/logo.png" alt="logo">
-            </div>
-            <div class="schoolName">
-                <h1>Veena's Pre Nursery School</h1>
-            </div>
+      <div class="head">
+        <div class="logo">
+          <img src="./Resources/About/logo.png" alt="logo">
         </div>
-        <a id="menu-icon" class="menu-icon">
-            <i class="fa fa-bars"></i>
-        </a>
-        <nav class="navBar">
-            <ul class="nav-bar dropdown-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="teachers_testimonials.html">Teachers</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="schoolName">
+          <h1>Veena's Pre Nursery School</h1>
+        </div>
+      </div>
+      <a id="menu-icon" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav class="navBar">
+        <ul class="nav-bar dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="teachers_testimonials.html">Teachers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
-<!-- Header End -->
+  </header>
+  <!-- Header End -->
 
-<h2>Photo Gallery</h2>
-<section class="events">
-  <h3 class="event-title">Events</h3>
-  <!-- <h3 class="additional">The best way to predict the future is to create it</h3> -->
-  <ul class="event-list">
-    <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
-    <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
-    <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
-    <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
-    <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
-    <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
-  </ul>
-</section>
-</header>
+  <h2 data-aos="fade-right">Photo Gallery</h2>
+  <section class="events">
+    <h3 class="event-title" data-aos="fade">Events</h3>
+    <!-- <h3 class="additional">The best way to predict the future is to create it</h3> -->
+    <ul class="event-list" data-aos="slide-up">
+      <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
+      <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
+      <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
+      <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
+      <li onclick="showImagesForEvent('annual-function')">Annual Function</li>
+      <li onclick="showImagesForEvent('sports-day')">Sports Day</li>
+    </ul>
+  </section>
+  </header>
 
-<main>
-<div class="box" data-event="annual-function">
-  <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
-</div>
-<div class="box" data-event="annual-function">
-  <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
-</div>
-<div class="box" data-event="annual-function">
-  <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
-</div>
-<div class="box" data-event="annual-function">
-  <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
-</div>
-<div class="box" data-event="annual-function">
-  <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
-</div>
-<div class="box" data-event="sports-day">
-   <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 2"></a>
-</div>
-</main>
+  <main >
+    <div class="box" data-event="annual-function" data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
+    </div>
+    <div class="box" data-event="annual-function" data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
+    </div>
+    <div class="box" data-event="annual-function" data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
+    </div>
+    <div class="box" data-event="annual-function" data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
+    </div>
+    <div class="box" data-event="annual-function"data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 1"></a>
+    </div>
+    <div class="box" data-event="sports-day" data-aos="slide-up">
+      <a href="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg"><img
+          src="./Resources/Gallery/WhatsApp Image 2023-09-08 at 9.04.05 PM.jpeg" alt="Travel Image 2"></a>
+    </div>
+  </main>
   <!-- Footer starts -->
   <footer>
     <div class="foot">
@@ -103,6 +109,13 @@
   <!-- Footer ends -->
   <script src="./js/responsive.js"></script>
   <script src="./js/gallery.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 800,
+    });
+</script>
 </body>
 
 </html>

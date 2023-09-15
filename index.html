@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./CSS/headStyle.css">
   <link rel="stylesheet" href="./CSS/footStyle.css">
   <link rel="stylesheet" href="./CSS/contactStyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -79,12 +80,12 @@
   <a href="#"><i class="fa fa-facebook"></i></a>
   <p><button>Contact</button></p>
 </div> -->
-  <div class="container">
-    <div class="column">
+  <div class="container" >
+    <div class="column" data-aos="fade-up">
       <div class="profile-img">
         <img src="./images/profile.jpg" alt="" style="height: 70%;">
       </div>
-      <div class="profile-info">
+      <div class="profile-info" >
         <h2>Founder and Director</h2>
         <h3>--ABC</h3>
         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
@@ -93,7 +94,7 @@
         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
       </div>
     </div>
-    <div class="column column1">
+    <div class="column column1" data-aos="fade-up-right">
       <p>Welcome to Veena's Daycare, a nurturing haven for children.<br> Founded just two years ago, our journey began
         with a vision:
         <br>to provide a wholesome and stimulating environment that fosters early childhood development.
@@ -103,16 +104,16 @@
         and grow.
       </p>
     </div>
-    <div class="column column1">
+    <div class="column column1"data-aos="fade-up-right">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eget libero tristique
         scelerisque.
       </p>
     </div>
   </div>
-  <div class="event-container">
+  <div class="event-container" >
     <h2>Latest Event</h2>
-    <div class="photo-list">
+    <div class="photo-list" data-aos="fade-up-right">
       <img src="images\istockphoto-669922316-612x612.jpg" alt="Event Photo 1">
       <img src="images\istockphoto-1095815742-612x612.jpg" alt="Event Photo 2">
       <img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3">
@@ -123,19 +124,19 @@
   <div class="locate-column">
     <h2>Locate Us</h2>
     <div class="locate">
-      <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d62193.69712271492!2d77.
+      <p data-aos="flip-up"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d62193.69712271492!2d77.
         67868062398145!3d13.028916846522291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCs
         DAyJzQyLjgiTiA3N8KwNDQnMTguMiJF!5e0!3m2!1sen!2sin!4v1694523365397!5m2!1sen!2sin" width="600" height="500"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 
-      <div class="contactForm">
+      <div class="contactForm" data-aos="fade-left">
         <h3>Contact Us</h3>
-        <form action="#" method="post">
+        <form onsubmit="sendMail(); reset(); return false">
           <input type="text" id="studentname" name="studentname" placeholder="Student Name" required>
           <input type="email" id="parentemail" name="parentemail" placeholder="Parent Email Id" required>
           <input type="number" id="phone" name="phone" placeholder="Mobile Number" required>
           <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
-          <button class="submit">Contact Now</button>
+          <button type="submit" class="submit">Contact Now</button>
         </form>
       </div>
     </div>
@@ -167,6 +168,15 @@
   <!-- Footer ends -->
   <script src="./js/responsive.js"></script>
   <script src="./js/imagesslider.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./js/contact.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 800,
+    });
+  </script>
 </body>
 
 </html>

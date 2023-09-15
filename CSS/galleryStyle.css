@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins' sans-serif;
+    overflow-x: hidden;
 }
 
 li {
@@ -27,13 +28,14 @@ a {
     font-size: 2.5rem;
     border-bottom: 5px solid orange;
     width: 20%;
-    margin-bottom: 30px;
+    margin: 2% 3%;
   }
   
   .event-title {
     font-size: 24px;
     margin-bottom: 10px;
     color: #293241;
+    text-align: center;
   }
   
   .additional {

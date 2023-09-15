@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins' sans-serif;
+    overflow-x: hidden;
 }
 
 li {
@@ -23,18 +24,28 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 2% 5%;
+    gap: 20px;
+    background: rgb(244, 240, 240);
 }
-
+.container h2{
+    text-align: start;
+    font-size: 2.5rem;
+    border-bottom: 5px solid orange;
+    width: 40%;
+    margin-bottom: 30px;
+}
 .right-section {
     flex: 1;
     padding: 20px;
     background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    border: 2px solid orange;
     border-radius: 5px;
     box-sizing: border-box;
     transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
     overflow: hidden;
+    background: rgb(221, 221, 197);
+    box-shadow: 0px 0px 50px #3333;
 }
 
 .right-section:hover {
@@ -53,10 +64,11 @@ a {
     max-width: 100%;
     height: auto;
     background-color: white;
+    border-radius: 10px;
 }
 
 main {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -65,18 +77,18 @@ main {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25;
     gap: 10px;
 }
 
 .teacher-info, .review {
     flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 5%;
+    border: 2px solid orange;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    background: rgb(221, 221, 197);
     box-sizing: border-box;
     padding: 10px;
     border-radius: 5px;
@@ -93,7 +105,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 10px;
+    margin-bottom: 50px;
     gap: 1rem;
 }
 

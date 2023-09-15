@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/headStyle.css">
     <link rel="stylesheet" href="./CSS/footStyle.css">
     <link rel="stylesheet" href="./CSS/teachStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Header Start -->
@@ -41,11 +42,13 @@
     <!-- Header End -->
 
     <div class="content">
-        <div class="left-section">
+        <div class="left-section" data-aos="slide-left">
             <img src="./Resources/Testimonial/ann.jpeg" alt="Image">
         </div>
-        <div class="right-section">
-            <p>"A teacher affects eternity; they can never tell where their influence stops."</p>
+        <div class="right-section" data-aos="slide-down">
+            <p>"A teacher affects eternity; they can never tell where their influence stops."
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam velit rem repellendus ut expedita quod fuga nihil sapiente iusto consequatur quasi accusamus, corrupti adipisci unde officiis impedit at similique animi? Facilis obcaecati iusto qui eos ea, tempora quisquam rem nam blanditiis soluta ex ad, nostrum consectetur magnam sed quasi.
+            </p>
             
         </div>
     </div>
@@ -53,7 +56,7 @@
         <div class="container">
             <h2>Our Teachers</h2>
             <div class="teachers-list">
-                <div class="teacher-info">
+                <div class="teacher-info" data-aos="slide-right">
                     <div class="teacher">
                         <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                         <div>
@@ -62,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="teacher-info">
+                <div class="teacher-info" data-aos="slide-left">
                     <div class="teacher">
                         <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                         <div>
@@ -71,7 +74,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="teacher-info">
+                <div class="teacher-info" data-aos="slide-right">
                     <div class="teacher">
                         <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                         <div>
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="teacher-info">
+                <div class="teacher-info" data-aos="slide-left">
                     <div class="teacher">
                         <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                         <div>
@@ -92,21 +95,21 @@
             </div>
             <h2>Teachers Reviews</h2>
             <div class="reviews">
-                <div class="review">
+                <div class="review" data-aos="slide-up">
                     <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                     <div>
                         <h3>Review 1</h3>
                         <p>Description.</p>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review" data-aos="slide-up">
                     <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                     <div>
                         <h3>Review 2</h3>
                         <p>Description.</p>
                     </div>
                 </div>
-                <div class="review">
+                <div class="review" data-aos="slide-up">
                     <img src="./Resources/Testimonial/WhatsApp Image 2023-09-08 at 9.04.04 PM.jpeg" alt="Teacher Image">
                     <div>
                         <h3>Review 3</h3>
@@ -140,5 +143,12 @@
     </footer>
     <!-- Footer ends -->
     <script src="./js/responsive.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 800,
+        });
+    </script>
 </body>
 </html>
