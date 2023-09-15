@@ -1,100 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ABC Daycare</title>
-    <link rel="stylesheet" href="./CSS/index.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./CSS/headStyle.css">
-    <link rel="stylesheet" href="./CSS/footStyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <!-- Link to your CSS file for styling -->
-    <script src="js\imagesslider.js"></script>
-    <!-- Link to your CSS file for styling -->
-    <script src="js\imagesslider.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/homestyle.css">
+  <link rel="stylesheet" href="./CSS/headStyle.css">
+  <link rel="stylesheet" href="./CSS/footStyle.css">
+  <link rel="stylesheet" href="./CSS/contactStyle.css">
 </head>
 
 <body>
-    <!-- Header Start -->
-    <header>
-      <div class="school">
-          <div class="head">
-              <div class="logo">
-                  <img src="./Resources/About/logo.png" alt="logo">
-              </div>
-              <div class="schoolName">
-                  <h1>Veena's Pre Nursery School</h1>
-              </div>
-          </div>
-          <a id="menu-icon" class="menu-icon">
-              <i class="fa fa-bars"></i>
-          </a>
-          <nav class="navBar">
-              <ul class="nav-bar dropdown-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="admissions.html">Admissions</a></li>
-                  <li><a href="teachers_testimonials.html">Teachers</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-          </nav>
+  <!-- Header Start -->
+  <header>
+    <div class="school">
+      <div class="head">
+        <div class="logo">
+          <img src="./Resources/About/logo.png" alt="logo">
+        </div>
+        <div class="schoolName">
+          <h1>Veena's Pre Nursery School</h1>
+        </div>
       </div>
+      <a id="menu-icon" class="menu-icon">
+        <i class="fa fa-bars"></i>
+      </a>
+      <nav class="navBar">
+        <ul class="nav-bar dropdown-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="teachers_testimonials.html">Teachers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-    <!-- Header End -->
-    <main id="main">
-        <!-- Slideshow container -->
-     <div class="slideshow-container">
-    <!-- Full-width images with number and caption text -->
+  <!-- Header End -->
+
+  <!-- Image slider -->
+  <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="images\image1.jpg" style="width:100%" height="500px">
-      <div class="text">Caption Text</div>
+      <img src="./images/image1.jpg" style="width:100%; height: 70vh;">
     </div>
-  
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="images\image2.jpg" style="width:100%"height="500px">
-      <div class="text">Caption Two</div>
+      <img src="./images/image2.jpg" style="width:100%; height: 70vh;">
     </div>
-  
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="images\image3.jpg" style="width:100%" height="500px">
-      <div class="text">Caption Three</div>
+      <img src="./images/image3.jpg" style="width:100%; height: 70vh;">
     </div>
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images\image4.jpg" style="width:100%" height="500px">
-        <div class="text">Caption four</div>
-      </div>
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images\image5.jpg" style="width:100%" height="500px">
-        <div class="text">Caption five</div>
-      </div>
-    
-  
-    <!-- Next and previous buttons -->
-  </div>
-
-  <!-- The dots/circles -->
-  <div style="text-align:center">
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a> <br>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-<hr>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <hr style="height: 20px; font-weight: 700;">
 
-<!-- <div class="card">
+  <!-- <div class="card">
   <img src="images\profile.jpg" alt="John" style="width:100%">
   <h1>John Doe</h1>
   <p class="title">CEO & Founder, Example</p>
@@ -105,71 +79,94 @@
   <a href="#"><i class="fa fa-facebook"></i></a>
   <p><button>Contact</button></p>
 </div> -->
-<div class="container">
-  <div class="column">
-      <p>
-         <div class="card">
-  <img src="images\profile.jpg" alt="John" style="width:100%">
-  <h1>John Doe</h1>
-  <p class="title">CEO & Founder, Example</p>
-  <p>Harvard University</p>
-  <a href="#"><i class="fa fa-dribbble"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
+  <div class="container">
+    <div class="column">
+      <div class="profile-img">
+        <img src="./images/profile.jpg" alt="" style="height: 70%;">
+      </div>
+      <div class="profile-info">
+        <h2>Founder and Director</h2>
+        <h3>--ABC</h3>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+    </div>
+    <div class="column column1">
+      <p>Welcome to Veena's Daycare, a nurturing haven for children.<br> Founded just two years ago, our journey began
+        with a vision:
+        <br>to provide a wholesome and stimulating environment that fosters early childhood development.
+        At Veena's Daycare, we are dedicated to offering young <br>learners the best possible start on their educational
+        journey.
+        Our focus is on providing a safe,<br> loving, and enriching atmosphere<br> where children can explore, learn,
+        and grow.
       </p>
-  </div>
-  <div class="column">
-    <p>Welcome to Veena's Daycare, a nurturing haven for children.<br> Founded just two years ago, our journey began with a vision:
-       <br>to provide a wholesome and stimulating environment that fosters early childhood development. 
-       At Veena's Daycare, we are dedicated to offering young <br>learners the best possible start on their educational journey. 
-       Our focus is on providing a safe,<br> loving, and enriching atmosphere<br> where children can explore, learn, and grow.</p>
-  </div>
-  <div class="column">
+    </div>
+    <div class="column column1">
       <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eget libero tristique
-          scelerisque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus eget libero tristique
+        scelerisque.
       </p>
+    </div>
   </div>
-</div>
-<div class="event-container">
-  <h1>Latest Event</h1>
-  <ul class="photo-list">
-      <li><img src="images\istockphoto-669922316-612x612.jpg" alt="Event Photo 1"></li>
-      <li><img src="images\istockphoto-1095815742-612x612.jpg" alt="Event Photo 2"></li>
-      <li><img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3"></li>
+  <div class="event-container">
+    <h2>Latest Event</h2>
+    <div class="photo-list">
+      <img src="images\istockphoto-669922316-612x612.jpg" alt="Event Photo 1">
+      <img src="images\istockphoto-1095815742-612x612.jpg" alt="Event Photo 2">
+      <img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3">
+      <img src="images\istockphoto-1166891654-612x612.jpg" alt="Event Photo 3">
       <!-- Add more photo list items as needed -->
-  </ul>
-</div>
+    </div>
+  </div>
+  <div class="locate-column">
+    <h2>Locate Us</h2>
+    <div class="locate">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d62193.69712271492!2d77.
+        67868062398145!3d13.028916846522291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCs
+        DAyJzQyLjgiTiA3N8KwNDQnMTguMiJF!5e0!3m2!1sen!2sin!4v1694523365397!5m2!1sen!2sin" width="600" height="500"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 
-</main>
+      <div class="contactForm">
+        <h3>Contact Us</h3>
+        <form action="#" method="post">
+          <input type="text" id="studentname" name="studentname" placeholder="Student Name" required>
+          <input type="email" id="parentemail" name="parentemail" placeholder="Parent Email Id" required>
+          <input type="number" id="phone" name="phone" placeholder="Mobile Number" required>
+          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+          <button class="submit">Contact Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
-     <!-- Footer starts -->
-     <footer>
-        <div class="foot">
-            <div class="socialLinks">
-                <p>Follow us On:</p>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-            </div>
-            <div class="footContact">
-                <div class="contents">
-                    <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
-                    <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
-                    <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
-                </div>
-            </div>
+  </main>
+  <!-- Footer starts -->
+  <footer>
+    <div class="foot">
+      <div class="socialLinks">
+        <p>Follow us On:</p>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      </div>
+      <div class="footContact">
+        <div class="contents">
+          <p><i class="fa-solid fa-phone"></i><span>+9125478942</span></p>
+          <p><i class="fa-solid fa-envelope"></i><span>abc@gmail.com</span></p>
+          <p><i class="fa-regular fa-clock"></i><span>Mon - Fri: 8:00AM - 10:00PM</span></p>
         </div>
-        <div class="copyright">
-            <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
-        </div>
-    </footer>
-    <!-- Footer ends -->
-    <script src="./js/responsive.js"></script>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2020 - 2023 by Some Location. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+  <script src="./js/responsive.js"></script>
+  <script src="./js/imagesslider.js"></script>
 </body>
+
 </html>

@@ -82,7 +82,9 @@
     top: 100px;
     right: 0;
   }
-
+  .navBar ul li a{
+    color: white;
+  }
   .school {
     align-items: flex-start;
   }
@@ -99,7 +101,8 @@
   .navBar {
     display: none;
     /* Hide the regular menu for mobile */
-    width: 250px;
+    width: 100%;
+    padding: 0;
   }
 
   .navBar.active {
